@@ -2,34 +2,50 @@
   "errors": [],
   "warnings": [],
   "version": "4.46.0",
-  "hash": "75edcc4d4a98ae975663",
+  "hash": "1e439fc1669aae5ff108",
   "publicPath": "/static/",
   "outputPath": "/Users/rabbit-wonderfulevryday/Dev/react_Study/hello-frontity/build/static",
   "assetsByChunkName": {
-    "hello-frontity": "hello-frontity.module.js",
-    "list": "list.module.js"
+    "hello-frontity": [
+      "hello-frontity.module.js",
+      "hello-frontity.39c238d0243934c883c2.hot-update.js"
+    ]
   },
   "assets": [
     {
-      "name": "hello-frontity.module.js",
-      "size": 6475070,
-      "chunks": [
-        "hello-frontity"
-      ],
-      "chunkNames": [
-        "hello-frontity"
-      ],
-      "info": {},
+      "name": "39c238d0243934c883c2.hot-update.json",
+      "size": 56,
+      "chunks": [],
+      "chunkNames": [],
+      "info": {
+        "hotModuleReplacement": true,
+        "immutable": true
+      },
       "emitted": false
     },
     {
-      "name": "list.module.js",
-      "size": 47401,
+      "name": "hello-frontity.39c238d0243934c883c2.hot-update.js",
+      "size": 5903,
       "chunks": [
-        "list"
+        "hello-frontity"
       ],
       "chunkNames": [
-        "list"
+        "hello-frontity"
+      ],
+      "info": {
+        "hotModuleReplacement": true,
+        "immutable": true
+      },
+      "emitted": false
+    },
+    {
+      "name": "hello-frontity.module.js",
+      "size": 6223192,
+      "chunks": [
+        "hello-frontity"
+      ],
+      "chunkNames": [
+        "hello-frontity"
       ],
       "info": {},
       "emitted": false
@@ -42,7 +58,8 @@
         "hello-frontity"
       ],
       "assets": [
-        "hello-frontity.module.js"
+        "hello-frontity.module.js",
+        "hello-frontity.39c238d0243934c883c2.hot-update.js"
       ],
       "children": {},
       "childAssets": {}
@@ -54,17 +71,8 @@
         "hello-frontity"
       ],
       "assets": [
-        "hello-frontity.module.js"
-      ],
-      "children": {},
-      "childAssets": {}
-    },
-    "list": {
-      "chunks": [
-        "list"
-      ],
-      "assets": [
-        "list.module.js"
+        "hello-frontity.module.js",
+        "hello-frontity.39c238d0243934c883c2.hot-update.js"
       ],
       "children": {},
       "childAssets": {}
@@ -76,41 +84,17 @@
       "rendered": true,
       "initial": true,
       "entry": true,
-      "size": 1668959,
+      "size": 1529537,
       "names": [
         "hello-frontity"
       ],
       "files": [
-        "hello-frontity.module.js"
+        "hello-frontity.module.js",
+        "hello-frontity.39c238d0243934c883c2.hot-update.js"
       ],
-      "hash": "3f3a1e769c634862301c",
+      "hash": "86d72c302ecd00c9e1cd",
       "siblings": [],
       "parents": [],
-      "children": [
-        "list"
-      ],
-      "childrenByOrder": {},
-      "modules": [],
-      "filteredModules": 0,
-      "origins": []
-    },
-    {
-      "id": "list",
-      "rendered": true,
-      "initial": false,
-      "entry": false,
-      "size": 30224,
-      "names": [
-        "list"
-      ],
-      "files": [
-        "list.module.js"
-      ],
-      "hash": "20673cd35c8e196fcf3d",
-      "siblings": [],
-      "parents": [
-        "hello-frontity"
-      ],
       "children": [],
       "childrenByOrder": {},
       "modules": [],
@@ -121,7 +105,7 @@
   "logging": {
     "webpack.buildChunkGraph.visitModules": {
       "entries": [],
-      "filteredEntries": 5,
+      "filteredEntries": 2,
       "debug": false
     }
   },
