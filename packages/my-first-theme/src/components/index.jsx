@@ -2,6 +2,7 @@ import React from "react";
 import { connect } from "frontity";
 import Link from "@frontity/components/link";
 import List from "./list";
+import Switch from '@frontity/components/switch'
 
 const Root = ({ state }) => {
   const data = state.source.get(state.router.link);
