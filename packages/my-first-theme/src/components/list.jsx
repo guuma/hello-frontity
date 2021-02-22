@@ -1,22 +1,69 @@
 import React from "react";
-import { connect } from "frontity";
+import { connect, styled } from "frontity";
 import Link from "@frontity/components/link";
 
-const List = ({ state }) => {
+const List = ({ state, actions }) => {
   const data = state.source.get(state.router.link);
   return (
-    <div>
+    <Items>
       {data.items.map((item) => {
         const post = state.source[item.type][item.id];
         return (
           <Link key={item.id} link={post.link}>
             {post.title.rendered}
-            <br/>
+            <br />
           </Link>
         );
       })}
-    </div>
+      <PrevNextNav>
+        {data.previous && (
+          <button
+            onClick={() => {
+              actions.router.set(data.previous);
+            }}
+          >
+            &#171; 前のページ
+          </button>
+        )}
+        {data.next && (
+          <button
+            onClick={() => {
+              actions.router.set(data.next);
+            }}
+          >
+            次のページ &#187;
+          </button>
+        )}
+      </PrevNextNav>
+    </Items>
   );
 };
+
+const Items = styled.dev`
+  & > a {
+    display: block;
+    margin: 6px 0;
+    font-size: 1.2em;
+    color: steelblue;
+    text-decoration: none;
+  }
+`;
+
+const PrevNextNav = styled.div`
+  padding-top: 1.5em;
+
+  & > button {
+    background: #eee;
+    text-decoration: none;
+    padding: 0.5em 1em;
+    color: #888;
+    border: 1px solid #aaa;
+    font-size: 0.8em;
+    margin-right: 2em;
+  }
+  & > button:hover {
+    cursor: pointer;
+  }
+`;
 
 export default connect(List);

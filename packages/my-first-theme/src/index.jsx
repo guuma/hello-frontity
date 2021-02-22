@@ -1,5 +1,6 @@
 import React from "react";
 import Root from "./components/index";
+import link from '@frontity/html2react/processors/link'
 
 const myFirstName = {
   name: "my-first-theme",
@@ -7,10 +8,21 @@ const myFirstName = {
     theme: Root,
   },
   state: {
-    theme: {},
+    theme: {
+      isUrlVisible: false,
+    },
   },
   actions: {
-    theme: {},
+    theme: {
+      toggleUrl: ({ state }) => {
+        state.theme.isUrlVisible = !state.theme.isUrlVisible;
+      },
+    },
+  },
+  libraries: {
+    html2react: {
+      processors: [link],
+    },
   },
 };
 
