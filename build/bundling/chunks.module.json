@@ -2,45 +2,16 @@
   "errors": [],
   "warnings": [],
   "version": "4.46.0",
-  "hash": "1e439fc1669aae5ff108",
+  "hash": "01e2f61988d87f7736a8",
   "publicPath": "/static/",
   "outputPath": "/Users/rabbit-wonderfulevryday/Dev/react_Study/hello-frontity/build/static",
   "assetsByChunkName": {
-    "hello-frontity": [
-      "hello-frontity.module.js",
-      "hello-frontity.39c238d0243934c883c2.hot-update.js"
-    ]
+    "hello-frontity": "hello-frontity.module.js"
   },
   "assets": [
     {
-      "name": "39c238d0243934c883c2.hot-update.json",
-      "size": 56,
-      "chunks": [],
-      "chunkNames": [],
-      "info": {
-        "hotModuleReplacement": true,
-        "immutable": true
-      },
-      "emitted": false
-    },
-    {
-      "name": "hello-frontity.39c238d0243934c883c2.hot-update.js",
-      "size": 5903,
-      "chunks": [
-        "hello-frontity"
-      ],
-      "chunkNames": [
-        "hello-frontity"
-      ],
-      "info": {
-        "hotModuleReplacement": true,
-        "immutable": true
-      },
-      "emitted": false
-    },
-    {
       "name": "hello-frontity.module.js",
-      "size": 6223192,
+      "size": 6344934,
       "chunks": [
         "hello-frontity"
       ],
@@ -58,8 +29,7 @@
         "hello-frontity"
       ],
       "assets": [
-        "hello-frontity.module.js",
-        "hello-frontity.39c238d0243934c883c2.hot-update.js"
+        "hello-frontity.module.js"
       ],
       "children": {},
       "childAssets": {}
@@ -71,8 +41,7 @@
         "hello-frontity"
       ],
       "assets": [
-        "hello-frontity.module.js",
-        "hello-frontity.39c238d0243934c883c2.hot-update.js"
+        "hello-frontity.module.js"
       ],
       "children": {},
       "childAssets": {}
@@ -84,15 +53,14 @@
       "rendered": true,
       "initial": true,
       "entry": true,
-      "size": 1529537,
+      "size": 1579154,
       "names": [
         "hello-frontity"
       ],
       "files": [
-        "hello-frontity.module.js",
-        "hello-frontity.39c238d0243934c883c2.hot-update.js"
+        "hello-frontity.module.js"
       ],
-      "hash": "86d72c302ecd00c9e1cd",
+      "hash": "da23a1f042e014d2bbfb",
       "siblings": [],
       "parents": [],
       "children": [],
